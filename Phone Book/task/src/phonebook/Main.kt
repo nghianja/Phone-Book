@@ -1,23 +1,29 @@
 package phonebook
 
 import java.io.File
+import java.lang.System.currentTimeMillis
 import java.util.concurrent.Callable
-import java.util.concurrent.ExecutorService
-import java.util.concurrent.Executors
-import java.util.concurrent.Future
-import java.util.concurrent.TimeUnit
-import java.util.concurrent.TimeoutException
+import kotlin.math.sqrt
 import kotlin.system.measureTimeMillis
 
 data class Entry(val name: String, val phone: String)
 
 val directory = mutableListOf<Entry>()
 val find = mutableListOf<String>()
+var sorted = false
 
 class BubbleSort: Callable<Long> {
     override fun call(): Long {
         return measureTimeMillis {
-            bubbleSort()
+            for (i in directory.indices) {
+                for (j in 0 until directory.size - (i + 1)) {
+                    if (directory[j].name > directory[j + 1].name) {
+                        val temp = directory[j]
+                        directory[j] = directory[j + 1]
+                        directory[j + 1] = temp
+                    }
+                }
+            }
         }
     }
 }
@@ -37,6 +43,13 @@ private fun loadFind(filename: String = "/Users/professional/Downloads/find.txt"
             find.add(it)
         }
     }
+}
+
+private fun doLinear(): Long {
+    println("Start searching (linear search)...")
+    val result = linearSearch()
+    printFoundTime(result.first, result.second, result.third)
+    return result.third
 }
 
 private fun linearSearch(): Triple<Int, Int, Long> {
@@ -68,39 +81,84 @@ private fun getTimeString(executionTime: Long): String {
 }
 
 private fun bubbleJump(timeout: Long) {
-    val executor: ExecutorService = Executors.newSingleThreadExecutor()
-    val future: Future<Long> = executor.submit(BubbleSort())
-    try {
-        val executionTime = future.get(timeout, TimeUnit.MILLISECONDS)
-        println(executionTime)
-    } catch (e: TimeoutException) {
-        println("STOPPED, moved to linear search")
-        future.cancel(true)
+    println("Start searching (bubble sort + jump search)...")
+    val executionTime = if (sorted) 0 else bubbleSort(timeout)
+    if (executionTime > timeout) {
+        val result = linearSearch()
+        val linearTime = result.third
+        printFoundTime(result.first, result.second, result.third + executionTime)
+        println("Sorting time: ${getTimeString(executionTime)} - STOPPED, moved to linear search")
+        println("Searching time: ${getTimeString(linearTime)}")
+    } else {
+        sorted = true
+        val result = jumpSearch()
+        printFoundTime(result.first, result.second, result.third + executionTime)
+        println("Sorting time: ${getTimeString(executionTime)}")
+        println("Searching time: ${getTimeString(result.third)}")
     }
-    executor.shutdownNow()
 }
 
-private fun bubbleSort() {
-    for (i in directory.indices) {
-        for (j in 0 until directory.size - (i + 1)) {
-            if (directory[j].name > directory[j + 1].name) {
-                val temp = directory[j]
-                directory[j] = directory[j + 1]
-                directory[j + 1] = temp
+private fun jumpSearch(): Triple<Int, Int, Long> {
+    var found = 0
+    var entries = 0
+    val executionTime = measureTimeMillis {
+        val jump = sqrt(directory.size.toDouble()).toInt()
+        find.forEach {
+            var index = 0
+            if (directory[index].name == it) {
+                found++
+            } else if (directory[index].name < it) {
+                var prev = index + 1
+                index += jump
+                loop@ while (index < directory.size && directory[prev - 1].name < it) {
+                    for (i in index downTo prev) {
+                        if (directory[i].name == it) {
+                            found++
+                            break@loop
+                        }
+                    }
+                    prev = index + 1
+                    index += jump
+                }
+                if (directory[prev - 1].name < it && index > directory.size - 1) {
+                    for (i in directory.size - 1 downTo prev) {
+                        if (directory[i].name == it) {
+                            found++
+                        }
+                    }
+                }
             }
+            entries++
+        }
+    }
+    return Triple(found, entries, executionTime)
+}
+
+private fun bubbleSort(timeout: Long): Long {
+    return measureTimeMillis {
+        val start = currentTimeMillis()
+        var n = directory.size
+        var swapped = true
+        while (swapped) {
+            swapped = false
+            for (i in 1 until n) {
+                if (directory[i - 1].name > directory[i].name) {
+                    val temp = directory[i]
+                    directory[i] = directory[i - 1]
+                    directory[i - 1] = temp
+                    swapped = true
+                }
+            }
+            n--
+            if (timeout > 0 && currentTimeMillis() - start > timeout) break
         }
     }
 }
 
 fun main() {
-    // loadDirectory("/Users/professional/Downloads/directory copy.txt")
     loadDirectory()
     loadFind()
-    println("Start searching (linear search)...")
-    val result = linearSearch()
-    printFoundTime(result.first, result.second, result.third)
+    val linearTime = doLinear()
     println()
-    println("Start searching (bubble sort + jump search)...")
-    bubbleJump(result.third * 10)
-    println(directory)
+    bubbleJump(linearTime * 10)
 }
