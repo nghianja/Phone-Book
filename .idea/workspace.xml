@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed649846-c921-4836-92bf-fa6614bbb73d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.3.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.3.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.3.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.3.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.3.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.3.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.3.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.3.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Phone Book/task/Phone_Book-task_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Phone Book/task/Phone_Book-task_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phone Book/A needle in the hay/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Phone Book/A needle in the hay/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phone Book/task/out/production/classes/phonebook/MainKt$loadDirectory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Phone Book/task/out/production/classes/phonebook/MainKt$loadDirectory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phone Book/task/out/production/classes/phonebook/MainKt$loadFind$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Phone Book/task/out/production/classes/phonebook/MainKt$loadFind$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phone Book/task/out/production/classes/phonebook/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/Phone Book/task/out/production/classes/phonebook/MainKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Phone Book/task/src/phonebook/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Phone Book/task/src/phonebook/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phone Book/task/test/PhoneBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Phone Book/task/test/PhoneBookTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/directory.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/find.txt" beforeDir="false" />
     </list>
@@ -70,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585389533287</updated>
-      <workItem from="1585389549512" duration="5925000" />
+      <workItem from="1585389549512" duration="17231000" />
     </task>
     <servers />
   </component>
@@ -78,21 +92,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1366" height="224" key="GridCell.Tab.0.bottom" timestamp="1585474207694">
-      <screen x="60" y="23" width="1380" height="877" />
+    <state width="1366" height="224" key="GridCell.Tab.0.bottom" timestamp="1585640551262">
+      <screen x="54" y="23" width="1386" height="877" />
     </state>
+    <state width="1366" height="224" key="GridCell.Tab.0.bottom/54.23.1386.877/1440.23.1920.1057@54.23.1386.877" timestamp="1585498472084" />
+    <state width="1366" height="224" key="GridCell.Tab.0.bottom/54.23.1386.877@54.23.1386.877" timestamp="1585640551262" />
     <state width="1366" height="224" key="GridCell.Tab.0.bottom/60.23.1380.877/1440.23.1920.1057@60.23.1380.877" timestamp="1585474207694" />
-    <state width="1366" height="224" key="GridCell.Tab.0.center" timestamp="1585474207693">
-      <screen x="60" y="23" width="1380" height="877" />
+    <state width="1366" height="224" key="GridCell.Tab.0.center" timestamp="1585640551260">
+      <screen x="54" y="23" width="1386" height="877" />
     </state>
+    <state width="1366" height="224" key="GridCell.Tab.0.center/54.23.1386.877/1440.23.1920.1057@54.23.1386.877" timestamp="1585498472083" />
+    <state width="1366" height="224" key="GridCell.Tab.0.center/54.23.1386.877@54.23.1386.877" timestamp="1585640551260" />
     <state width="1366" height="224" key="GridCell.Tab.0.center/60.23.1380.877/1440.23.1920.1057@60.23.1380.877" timestamp="1585474207693" />
-    <state width="1366" height="224" key="GridCell.Tab.0.left" timestamp="1585474207692">
-      <screen x="60" y="23" width="1380" height="877" />
+    <state width="1366" height="224" key="GridCell.Tab.0.left" timestamp="1585640551260">
+      <screen x="54" y="23" width="1386" height="877" />
     </state>
+    <state width="1366" height="224" key="GridCell.Tab.0.left/54.23.1386.877/1440.23.1920.1057@54.23.1386.877" timestamp="1585498472082" />
+    <state width="1366" height="224" key="GridCell.Tab.0.left/54.23.1386.877@54.23.1386.877" timestamp="1585640551260" />
     <state width="1366" height="224" key="GridCell.Tab.0.left/60.23.1380.877/1440.23.1920.1057@60.23.1380.877" timestamp="1585474207692" />
-    <state width="1366" height="224" key="GridCell.Tab.0.right" timestamp="1585474207693">
-      <screen x="60" y="23" width="1380" height="877" />
+    <state width="1366" height="224" key="GridCell.Tab.0.right" timestamp="1585640551261">
+      <screen x="54" y="23" width="1386" height="877" />
     </state>
+    <state width="1366" height="224" key="GridCell.Tab.0.right/54.23.1386.877/1440.23.1920.1057@54.23.1386.877" timestamp="1585498472083" />
+    <state width="1366" height="224" key="GridCell.Tab.0.right/54.23.1386.877@54.23.1386.877" timestamp="1585640551261" />
     <state width="1366" height="224" key="GridCell.Tab.0.right/60.23.1380.877/1440.23.1920.1057@60.23.1380.877" timestamp="1585474207693" />
     <state x="421" y="293" key="com.intellij.ide.util.TipDialog" timestamp="1585389548152">
       <screen x="60" y="23" width="1380" height="877" />
