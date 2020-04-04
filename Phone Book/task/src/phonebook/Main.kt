@@ -4,6 +4,7 @@ import java.io.File
 import java.lang.Exception
 import java.lang.System.currentTimeMillis
 import kotlin.math.ceil
+import kotlin.math.pow
 import kotlin.math.sqrt
 import kotlin.system.measureTimeMillis
 
@@ -213,6 +214,28 @@ private fun partition(mutable: MutableList<Entry>, lo: Int, hi: Int): Int {
     return i
 }
 
+private fun doHash() {
+    println("Start searching (hash table)...")
+    val table = HashTable()
+    val executionTime = measureTimeMillis { table.addAll(directory) }
+    val result = hashSearch(table)
+    printFoundTime(result.first, result.second, result.third + executionTime)
+    println("Creating time: ${getTimeString(executionTime)}")
+    println("Searching time: ${getTimeString(result.third)}")
+}
+
+private fun hashSearch(table: HashTable): Triple<Int, Int, Long> {
+    var found = 0
+    var entries = 0
+    val executionTime = measureTimeMillis {
+        find.forEach {
+            if (table.search(it)) found++
+            entries++
+        }
+    }
+    return Triple(found, entries, executionTime)
+}
+
 fun main() {
     loadDirectory()
     loadFind()
@@ -221,4 +244,39 @@ fun main() {
     bubbleJump(linearTime * 10)
     println()
     quickBinary(linearTime * 10)
+    println()
+    doHash()
+}
+
+class HashTable {
+    private val m = 999983
+    private val bucket1 = arrayOfNulls<Entry>(m)
+    private val bucket2 = arrayOfNulls<Entry>(m)
+
+    private fun add(entry: Entry) {
+        val hashKey = hash(entry.name)
+        if (bucket1[hashKey] == null)
+            bucket1[hashKey] = entry
+        else
+            bucket2[hashKey] = entry
+    }
+
+    fun addAll(list: List<Entry>) {
+        list.forEach { add(it) }
+    }
+
+    private fun hash(key: String): Int {
+        val r = 31
+        var hash = 0
+        for (element in key)
+            hash = (r * hash + element.toInt()) % m
+        return hash
+    }
+
+    fun search(name: String): Boolean {
+        val hashKey = hash(name)
+        if (bucket1[hashKey] != null || bucket2[hashKey] != null)
+            return true
+        return false
+    }
 }

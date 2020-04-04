@@ -10,12 +10,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Phone Book/task/Phone_Book-task_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Phone Book/task/Phone_Book-task_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phone Book/Instant search/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Phone Book/Instant search/task-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Phone Book/Need for speed/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Phone Book/Need for speed/task-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Phone Book/task/src/phonebook/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Phone Book/task/src/phonebook/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phone Book/task/test/PhoneBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Phone Book/task/test/PhoneBookTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/directory.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/find.txt" beforeDir="false" />
     </list>
@@ -82,7 +81,8 @@
       <option name="presentableId" value="Default" />
       <updated>1585389533287</updated>
       <workItem from="1585389549512" duration="27272000" />
-      <workItem from="1585818600093" duration="11154000" />
+      <workItem from="1585818600093" duration="11416000" />
+      <workItem from="1585931052434" duration="15469000" />
     </task>
     <servers />
   </component>
@@ -90,33 +90,42 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1380" height="237" key="GridCell.Tab.0.bottom" timestamp="1585849228946">
-      <screen x="60" y="23" width="1380" height="877" />
+    <state x="152" y="123" width="1188" height="677" key="DiffContextDialog" timestamp="1585931217718">
+      <screen x="52" y="23" width="1388" height="877" />
     </state>
-    <state width="1366" height="224" key="GridCell.Tab.0.bottom/54.23.1386.877/1440.23.1920.1057@54.23.1386.877" timestamp="1585498472084" />
+    <state x="152" y="123" width="1188" height="677" key="DiffContextDialog/52.23.1388.877/1440.23.1920.1057@52.23.1388.877" timestamp="1585931217718" />
+    <state width="1388" height="237" key="GridCell.Tab.0.bottom" timestamp="1585978523544">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state width="1388" height="237" key="GridCell.Tab.0.bottom/54.23.1386.877/1440.23.1920.1057@54.23.1386.877" timestamp="1585978523544" />
     <state width="1366" height="224" key="GridCell.Tab.0.bottom/54.23.1386.877@54.23.1386.877" timestamp="1585651187959" />
     <state width="1380" height="237" key="GridCell.Tab.0.bottom/60.23.1380.877/1440.23.1920.1057@60.23.1380.877" timestamp="1585849228946" />
-    <state width="1380" height="237" key="GridCell.Tab.0.center" timestamp="1585849228945">
-      <screen x="60" y="23" width="1380" height="877" />
+    <state width="1388" height="237" key="GridCell.Tab.0.center" timestamp="1585978523543">
+      <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1366" height="224" key="GridCell.Tab.0.center/54.23.1386.877/1440.23.1920.1057@54.23.1386.877" timestamp="1585498472083" />
+    <state width="1388" height="237" key="GridCell.Tab.0.center/54.23.1386.877/1440.23.1920.1057@54.23.1386.877" timestamp="1585978523543" />
     <state width="1366" height="224" key="GridCell.Tab.0.center/54.23.1386.877@54.23.1386.877" timestamp="1585651187958" />
     <state width="1380" height="237" key="GridCell.Tab.0.center/60.23.1380.877/1440.23.1920.1057@60.23.1380.877" timestamp="1585849228945" />
-    <state width="1380" height="237" key="GridCell.Tab.0.left" timestamp="1585849228945">
-      <screen x="60" y="23" width="1380" height="877" />
+    <state width="1388" height="237" key="GridCell.Tab.0.left" timestamp="1585978523542">
+      <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1366" height="224" key="GridCell.Tab.0.left/54.23.1386.877/1440.23.1920.1057@54.23.1386.877" timestamp="1585498472082" />
+    <state width="1388" height="237" key="GridCell.Tab.0.left/54.23.1386.877/1440.23.1920.1057@54.23.1386.877" timestamp="1585978523542" />
     <state width="1366" height="224" key="GridCell.Tab.0.left/54.23.1386.877@54.23.1386.877" timestamp="1585651187958" />
     <state width="1380" height="237" key="GridCell.Tab.0.left/60.23.1380.877/1440.23.1920.1057@60.23.1380.877" timestamp="1585849228945" />
-    <state width="1380" height="237" key="GridCell.Tab.0.right" timestamp="1585849228946">
-      <screen x="60" y="23" width="1380" height="877" />
+    <state width="1388" height="237" key="GridCell.Tab.0.right" timestamp="1585978523544">
+      <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1366" height="224" key="GridCell.Tab.0.right/54.23.1386.877/1440.23.1920.1057@54.23.1386.877" timestamp="1585498472083" />
+    <state width="1388" height="237" key="GridCell.Tab.0.right/54.23.1386.877/1440.23.1920.1057@54.23.1386.877" timestamp="1585978523544" />
     <state width="1366" height="224" key="GridCell.Tab.0.right/54.23.1386.877@54.23.1386.877" timestamp="1585651187959" />
     <state width="1380" height="237" key="GridCell.Tab.0.right/60.23.1380.877/1440.23.1920.1057@60.23.1380.877" timestamp="1585849228946" />
-    <state x="421" y="293" key="com.intellij.ide.util.TipDialog" timestamp="1585818601044">
-      <screen x="60" y="23" width="1380" height="877" />
+    <state x="418" y="179" key="RollbackChangesDialog" timestamp="1585931204662">
+      <screen x="52" y="23" width="1388" height="877" />
     </state>
+    <state x="418" y="179" key="RollbackChangesDialog/52.23.1388.877/1440.23.1920.1057@52.23.1388.877" timestamp="1585931204662" />
+    <state x="415" y="293" key="com.intellij.ide.util.TipDialog" timestamp="1585931070897">
+      <screen x="52" y="23" width="1388" height="877" />
+    </state>
+    <state x="415" y="293" key="com.intellij.ide.util.TipDialog/52.23.1388.877/1440.23.1920.1057@52.23.1388.877" timestamp="1585931070897" />
     <state x="421" y="293" key="com.intellij.ide.util.TipDialog/60.23.1380.877/1440.23.1920.1057@60.23.1380.877" timestamp="1585818601044" />
     <state x="421" y="293" key="com.intellij.ide.util.TipDialog/60.23.1380.877@60.23.1380.877" timestamp="1585389548152" />
     <state x="409" y="222" width="670" height="676" key="search.everywhere.popup" timestamp="1585649828668">
